@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Contato</title>
+</head>
+
+<body style="background-color: #f2f2f2;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-site.png" class="img-fluid" width="80px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produtores.html">Produtores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tipos.html">Tipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dicasereceitas.html">Dicas & receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container py-4 mb-5 mt-5">
+            <h3>Envie-nos uma mensagem</h3>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label class="form-label" for="name">Nome</label>
+                    <input class="form-control" id="name" type="text" placeholder="Nome"
+                        data-sb-validations="required" />
+                    <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="emailAddress">Email</label>
+                    <input class="form-control" id="emailAddress" type="email" placeholder="Email"
+                        data-sb-validations="required, email" />
+                    <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.
+                    </div>
+                    <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not
+                        valid.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="message">Mensagem</label>
+                    <textarea class="form-control" id="message" type="text" placeholder="Mensagem"
+                        style="height: 10rem;" data-sb-validations="required"></textarea>
+                    <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                </div>
+
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center mb-3">Form submission successful!</div>
+                </div>
+
+                <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                </div>
+
+                <div class="d-grid">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Enviar
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Obrigado pela sua mensagem!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Faremos o possível para responder sua mensagem o mais rápido possível, continue aproveitando muito o nosso site! Até logo;)
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer-->
+    <div class="d-flex flex-column h-100">
+        <footer class="w-100 py-4 flex-shrink-0 bg-dark">
+            <div class="container py-4">
+                <div class="row gy-4 gx-5">
+                    <div class="col-lg-4 col-md-6">
+                        <img src="images/logo-site.png" class="img-fluid" width="80px">
+                        <p class="small text-muted">Somos especialistas e apaixonados em café, apaixone-se você também.
+                        </p>
+                        <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary"
+                                href="#">Clube do café</a></p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-3">Links rápidos</h5>
+                        <ul class="list-unstyled text-muted">
+                            <li><a href="#">Produtores</a></li>
+                            <li><a href="#">tipos</a></li>
+                            <li><a href="#">Dicas e receitas</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-3">Siga-nos nas redes sociais</h5>
+                        <div class="row">
+                            <div class="col">
+                                <a href="https://www.facebook.com/"><i class="bi bi-facebook"
+                                        style="font-size: 30px; color: white;"></i></a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.instagram.com/"><i class="bi bi-instagram"
+                                        style="font-size: 30px; color: white;"></i></a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.youtube.com/"><i class="bi bi-youtube"
+                                        style="font-size: 30px; color: white;"></i></a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.tiktok.com/"><i class="bi bi-tiktok"
+                                        style="font-size: 30px; color: white;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
